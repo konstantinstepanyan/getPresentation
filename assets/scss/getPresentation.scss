@@ -1,19 +1,22 @@
 .getPresentation {
 
     .title {
-        font-size: 3.5rem;
-        line-height: 3.8rem;
         font-weight: 100;
+
+        font-size: 4.5rem;
+        line-height: 4.8rem;
     }
 
     &__desc {
-        font-size: 3rem;
-        line-height: 3.2rem;
+        font-size: 4rem;
+        line-height: 4.2rem;
     }
 
     &__subtitle {
         margin-top: 40px;
         font-weight: 200;
+        font-size: 3rem;
+        text-align: center;
     }
 
     .phone-wrapper {
@@ -22,6 +25,8 @@
 
     &__text_phone,
     &__text_phone:focus {
+        font-size: 4rem;
+        width: 100%;
         border-radius: 7px;
         padding: 10px 20px;
         border: 1px solid grey;
@@ -31,27 +36,66 @@
 
     .label {
         position: absolute;
-        top: -9px;
         padding: 3px;
-        left: 18px;
         display: block;
         z-index: 1;
         background: #fff;
-        font-size: 1.1rem;
+
+        font-size: 2.1rem;
+        left: 23px;
+        top: -15px;
     }
 
     .checkbox-wrapper {
-        position: relative;
+        margin-top: 30px;
         display: flex;
         flex-direction: row-reverse;
-        max-width: 230px;
+        justify-content: flex-end;
+        align-items: center;
+
+
+        font-size: 2rem;
+        max-width: 610px;
     }
 
     &__label_checkbox {
         padding-left: 1rem;
     }
 
-    &__checkbox{
+    &__checkbox {
+        width: 30px;
+        height: 30px;
         cursor: pointer;
+    }
+
+    .social-network {
+        height: 220px;
+        margin-top: 30px;
+
+        &__item {
+
+            height: 100%;
+            width: 25%;
+
+            &_messenger {
+                background: #2697ff;
+
+                border-radius: 6px 0px 0 6px;
+            }
+
+            &_telegram {
+                background: #1daaef;
+            }
+
+            &_viber {
+                background: #672a91;
+            }
+
+            &_vk {
+                background: #55779c;
+
+                border-radius: 0px 6px 6px 0px;
+            }
+        }
     }
 }

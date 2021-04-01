@@ -10,11 +10,15 @@ div.getPresentation
             input.getPresentation__text.getPresentation__text_phone(type='text' placeholder='+7 (936) 000-11-22')
 
         div.social-network
-            img.social-network__item.item_messenger
-            img.social-network__item.item_telegram
-            img.social-network__item.item_viber
-            img.social-network__item.item_vk
-
+            a(href='#')
+                img.social-network__item.social-network__item_messenger(src='assets/img/header/socialNetwork/messenger.png' alt='messenger')
+            a(href='#')
+                img.social-network__item.social-network__item_telegram(src='assets/img/header/socialNetwork/telegram.png')
+            a(href='#')
+                img.social-network__item.social-network__item_viber(src='assets/img/header/socialNetwork/viber.png')
+            a(href='#')
+                img.social-network__item.social-network__item_vk(src='assets/img/header/socialNetwork/vk.png')
+    
         div.checkbox-wrapper
             span.getPresentation__label.getPresentation__label_checkbox Вы соглашаетесь с политикой конфиденциальности
             input.getPresentation__checkbox(type='checkbox')

@@ -50,19 +50,21 @@
 }
 
 .getPresentation .title {
-  font-size: 3.5rem;
-  line-height: 3.8rem;
   font-weight: 100;
+  font-size: 4.5rem;
+  line-height: 4.8rem;
 }
 
 .getPresentation__desc {
-  font-size: 3rem;
-  line-height: 3.2rem;
+  font-size: 4rem;
+  line-height: 4.2rem;
 }
 
 .getPresentation__subtitle {
   margin-top: 40px;
   font-weight: 200;
+  font-size: 3rem;
+  text-align: center;
 }
 
 .getPresentation .phone-wrapper {
@@ -71,6 +73,8 @@
 
 .getPresentation__text_phone,
 .getPresentation__text_phone:focus {
+  font-size: 4rem;
+  width: 100%;
   border-radius: 7px;
   padding: 10px 20px;
   border: 1px solid grey;
@@ -80,20 +84,23 @@
 
 .getPresentation .label {
   position: absolute;
-  top: -9px;
   padding: 3px;
-  left: 18px;
   display: block;
   z-index: 1;
   background: #fff;
-  font-size: 1.1rem;
+  font-size: 2.1rem;
+  left: 23px;
+  top: -15px;
 }
 
 .getPresentation .checkbox-wrapper {
-  position: relative;
+  margin-top: 30px;
   display: flex;
   flex-direction: row-reverse;
-  max-width: 230px;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 2rem;
+  max-width: 610px;
 }
 
 .getPresentation__label_checkbox {
@@ -101,7 +108,37 @@
 }
 
 .getPresentation__checkbox {
+  width: 30px;
+  height: 30px;
   cursor: pointer;
+}
+
+.getPresentation .social-network {
+  height: 220px;
+  margin-top: 30px;
+}
+
+.getPresentation .social-network__item {
+  height: 100%;
+  width: 25%;
+}
+
+.getPresentation .social-network__item_messenger {
+  background: #2697ff;
+  border-radius: 6px 0px 0 6px;
+}
+
+.getPresentation .social-network__item_telegram {
+  background: #1daaef;
+}
+
+.getPresentation .social-network__item_viber {
+  background: #672a91;
+}
+
+.getPresentation .social-network__item_vk {
+  background: #55779c;
+  border-radius: 0px 6px 6px 0px;
 }
 
 @keyframes rot {
