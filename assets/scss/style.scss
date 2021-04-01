@@ -224,7 +224,7 @@ input:checked + label:before {
 
 
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1200px) {
     .title {
         font-size: 3.5rem !important;
         line-height: 3.8rem !important;
@@ -348,6 +348,11 @@ input:checked + label:before {
         }
     }
 
+    .phone-wrapper {
+        margin-top: 20px;
+    }
+
+
     .getPresentation .label {
         font-size: 2rem;
         left: 23px;
@@ -376,9 +381,9 @@ input:checked + label:before {
         height: 28px;
         font-size: 4rem;
     }
-    
+
     input:checked + label:before {
-    content: "✓";
-}
+        content: "✓";
+    }
 
 }
