@@ -1,0 +1,57 @@
+.getPresentation {
+
+    .title {
+        font-size: 3.5rem;
+        line-height: 3.8rem;
+        font-weight: 100;
+    }
+
+    &__desc {
+        font-size: 3rem;
+        line-height: 3.2rem;
+    }
+
+    &__subtitle {
+        margin-top: 40px;
+        font-weight: 200;
+    }
+
+    .phone-wrapper {
+        position: relative;
+    }
+
+    &__text_phone,
+    &__text_phone:focus {
+        border-radius: 7px;
+        padding: 10px 20px;
+        border: 1px solid grey;
+        z-index: 0;
+        position: relative;
+    }
+
+    .label {
+        position: absolute;
+        top: -9px;
+        padding: 3px;
+        left: 18px;
+        display: block;
+        z-index: 1;
+        background: #fff;
+        font-size: 1.1rem;
+    }
+
+    .checkbox-wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: row-reverse;
+        max-width: 230px;
+    }
+
+    &__label_checkbox {
+        padding-left: 1rem;
+    }
+
+    &__checkbox{
+        cursor: pointer;
+    }
+}

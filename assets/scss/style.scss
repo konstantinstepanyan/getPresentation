@@ -1,4 +1,5 @@
 @import "header";
+@import "getPresentation";
 
 
 @font-face {
@@ -121,6 +122,11 @@ button {
 .color_alpha {
     color: transparent;
     color: rgba(0, 0, 0, 0);
+}
+
+input, input:focus{
+    border: none;
+    outline: none;
 }
 
 input {

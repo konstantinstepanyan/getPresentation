@@ -1,1 +1,20 @@
 div.getPresentation
+    div.getPresentation__container.container
+        h4.getPresentation__title.title 8 опытных специалистов #[br] по цене 1 штатного
+        span.getPresentation__desc Получите презентацию прямо в свой #[br] мессенджер
+
+
+        h2.getPresentation__subtitle ШАГ 1 - Выберите свой мессенджер
+        div.phone-wrapper
+            span.label Введите ваш номер
+            input.getPresentation__text.getPresentation__text_phone(type='text' placeholder='+7 (936) 000-11-22')
+
+        div.social-network
+            img.social-network__item.item_messenger
+            img.social-network__item.item_telegram
+            img.social-network__item.item_viber
+            img.social-network__item.item_vk
+
+        div.checkbox-wrapper
+            span.getPresentation__label.getPresentation__label_checkbox Вы соглашаетесь с политикой конфиденциальности
+            input.getPresentation__checkbox(type='checkbox')
