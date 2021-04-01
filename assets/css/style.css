@@ -107,8 +107,8 @@
 .getPresentation .checkbox-wrapper {
   margin-top: 30px;
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
   font-size: 2rem;
   max-width: 610px;
@@ -315,6 +315,103 @@ input:-webkit-autofill {
   /* цвет текста */
 }
 
+/* прячем input checkbox */
+
+input[type="checkbox"] {
+  display: none;
+}
+
+/* стили для метки */
+
+label {
+  color: #000;
+  cursor: default;
+  font-weight: normal;
+  line-height: 30px;
+  padding: 10px 0;
+  vertical-align: middle;
+}
+
+/* формируем внешний вид чекбокса в псевдоэлементе before */
+
+label:before {
+  content: " ";
+  color: #000;
+  display: inline-block;
+  font: 20px/30px Arial;
+  margin-right: 15px;
+  position: relative;
+  text-align: center;
+  text-indent: 0px;
+  width: 30px;
+  height: 30px;
+  background: #FFF;
+  border: 1px solid #e3e3e3;
+  -webkit-border-image: initial;
+  -o-border-image: initial;
+  border-image: initial;
+  vertical-align: middle;
+}
+
+/* disabled */
+
+input:disabled + label:before {
+  background: #eee;
+  color: #aaa;
+}
+
+/* прячем input checkbox */
+
+input[type="checkbox"] {
+  display: none;
+}
+
+/* стили для метки */
+
+label {
+  color: #000;
+  cursor: default;
+  font-weight: normal;
+  line-height: 30px;
+  padding: 10px 0;
+  vertical-align: middle;
+}
+
+/* формируем внешний вид чекбокса в псевдоэлементе before */
+
+label:before {
+  content: " ";
+  color: #000;
+  display: inline-block;
+  margin-right: 15px;
+  position: relative;
+  text-align: center;
+  text-indent: 0px;
+  width: 25px;
+  height: 25px;
+  background: #FFF;
+  border: 1px solid #e3e3e3;
+  -webkit-border-image: initial;
+  -o-border-image: initial;
+  border-image: initial;
+  vertical-align: middle;
+}
+
+/* вариации внешнего вида в зав-ти от статуса checkbox */
+
+/* checked */
+
+input:checked + label:before {
+  content: "✔";
+}
+
+/* disabled */
+
+input:disabled + label:before {
+  background: #eee;
+  color: #aaa;
+}
+
 @media screen and (max-width: 1100px) {
   .title {
     font-size: 3.5rem !important;
@@ -449,5 +546,15 @@ input:-webkit-autofill {
 
   .subtitle {
     font-size: 13px;
+  }
+
+  label:before {
+    width: 20px;
+    height: 28px;
+    font-size: 4rem;
+  }
+
+  input:checked + label:before {
+    content: "✓";
   }
 }
