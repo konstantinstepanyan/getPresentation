@@ -102,6 +102,26 @@
   cursor: pointer;
 }
 
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 @font-face {
   font-family: "Nickelodeon";
   src: url("../fonts/Nickelodeon.ttf") format("TrueType");
