@@ -47,6 +47,16 @@
   max-height: 30px;
 }
 
+.getPresentation .russian-flag {
+  position: absolute;
+  max-width: 60px;
+  top: 0px;
+  bottom: 0;
+  left: 16px;
+  margin: auto;
+  border-radius: 5px;
+}
+
 .getPresentation .title {
   font-weight: 100;
   font-size: 4.5rem;
@@ -78,6 +88,7 @@
   border: 1px solid grey;
   z-index: 0;
   position: relative;
+  padding-left: 100px;
 }
 
 .getPresentation .label {
