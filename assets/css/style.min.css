@@ -47,6 +47,10 @@
   max-height: 30px;
 }
 
+.getPresentation {
+  color: #777;
+}
+
 .getPresentation .russian-flag {
   position: absolute;
   max-width: 60px;
@@ -61,6 +65,7 @@
   font-weight: 100;
   font-size: 4.5rem;
   line-height: 4.8rem;
+  color: #000;
 }
 
 .getPresentation__desc {
@@ -89,6 +94,7 @@
   z-index: 0;
   position: relative;
   padding-left: 100px;
+  color: #777;
 }
 
 .getPresentation .label {
@@ -314,15 +320,6 @@ input[type="checkbox"] {
   display: none;
 }
 
-label {
-  color: #000;
-  cursor: default;
-  font-weight: normal;
-  line-height: 30px;
-  padding: 10px 0;
-  vertical-align: middle;
-}
-
 label:before {
   content: " ";
   color: #000;
@@ -344,7 +341,7 @@ label:before {
 
 input:disabled+label:before {
   background: #eee;
-  color: #aaa;
+  color: #777;
 }
 
 input[type="checkbox"] {
@@ -352,7 +349,7 @@ input[type="checkbox"] {
 }
 
 label {
-  color: #000;
+  color: #777;
   cursor: default;
   font-weight: normal;
   line-height: 30px;
@@ -362,7 +359,7 @@ label {
 
 label:before {
   content: " ";
-  color: #000;
+  color: #222;
   display: inline-block;
   margin-right: 15px;
   position: relative;
@@ -380,11 +377,6 @@ label:before {
 
 input:checked+label:before {
   content: "✔";
-}
-
-input:disabled+label:before {
-  background: #eee;
-  color: #aaa;
 }
 
 @media screen and (max-width: 1100px) {
