@@ -346,6 +346,12 @@ input:checked + label:before {
         &__container {
             grid-template-rows: 25px 90px;
         }
+
+
+        .header__title,
+        .header__desc {
+            margin-left: 7px;
+        }
     }
 
     .phone-wrapper {

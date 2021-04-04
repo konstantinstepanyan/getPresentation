@@ -517,6 +517,11 @@ input:checked + label:before {
     grid-template-rows: 25px 90px;
   }
 
+  .header .header__title,
+  .header .header__desc {
+    margin-left: 7px;
+  }
+
   .phone-wrapper {
     margin-top: 20px;
   }
