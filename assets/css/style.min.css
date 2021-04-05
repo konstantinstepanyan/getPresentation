@@ -51,13 +51,10 @@
   color: #777;
 }
 
-.getPresentation a,
-.getPresentation a:hover,
-.getPresentation a:visited {
+.getPresentation__link {
   padding-left: 3px;
   text-decoration: underline;
   line-height: 6px;
-  color: #777;
 }
 
 .getPresentation .russian-flag {
