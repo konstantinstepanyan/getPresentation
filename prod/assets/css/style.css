@@ -141,28 +141,53 @@
 .getPresentation .social-network {
     height: 220px;
     margin-top: 30px;
+    display: flex;
+}
+
+.getPresentation .social-network .social-network__a {
+    position: relative;
+    height: 220px;
+    width: 25%;
+    display: block;
+}
+
+.getPresentation .social-network .social-network__span {
+    color: #fff;
+    text-decoration: none;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 3rem;
+    max-width: fit-content;
 }
 
 .getPresentation .social-network__item {
     height: 100%;
     width: 25%;
+
+    width: 141px;
+    height: 144px;
+    top: -15px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
 }
 
 .getPresentation .social-network__item_messenger {
-    background: #2697ff;
+
     border-radius: 6px 0px 0 6px;
 }
 
-.getPresentation .social-network__item_telegram {
-    background: #1daaef;
-}
+.getPresentation .social-network__item_telegram {}
 
-.getPresentation .social-network__item_viber {
-    background: #672a91;
-}
+.getPresentation .social-network__item_viber {}
 
 .getPresentation .social-network__item_vk {
-    background: #55779c;
+
     border-radius: 0px 6px 6px 0px;
 }
 
@@ -409,6 +434,7 @@ input:checked + label:before {
 }
 
 .submit {
+    margin-top: 20px;
     background: red !important;
     height: 40px;
     width: 200px;
@@ -463,6 +489,21 @@ input:checked + label:before {
         width: 20px;
         height: 20px;
     }
+
+    .getPresentation .social-network__a {
+        height: 120px !important;
+        width: 25% !important;
+    }
+
+    .getPresentation .social-network__item {
+        width: 45px !important;
+        height: 44px !important;
+        top: -18px !important;
+    }
+
+    .getPresentation .social-network__span {
+        font-size: 2rem !important;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -516,7 +557,16 @@ input:checked + label:before {
     .getPresentation__text_phone:focus {
         padding-left: 70px;
     }
+    
+    .getPresentation .social-network__a {
+        height: 85px !important;
+    }
+    .getPresentation .social-network__span {
+        font-size: 1.85rem !important;
+    }
 }
+
+
 
 @media screen and (max-width: 450px) {
     .header .title {
