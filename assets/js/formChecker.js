@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         if (e.type == 'click') {
                 
-            e.preventDefault();
+            
 
             
             if (phoneInputValue != '') {
@@ -51,6 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
 
                 phoneInput.style.border = '2px solid red';
+                e.preventDefault();
             }
         }
 
