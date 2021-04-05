@@ -51,6 +51,12 @@
   color: #777;
 }
 
+.getPresentation__link {
+  padding-left: 3px;
+  text-decoration: underline;
+  line-height: 6px;
+}
+
 .getPresentation .russian-flag {
   position: absolute;
   max-width: 60px;
@@ -377,6 +383,16 @@ label:before {
 
 input:checked+label:before {
   content: "✔";
+}
+
+.submit {
+  background: red !important;
+  height: 40px;
+  width: 200px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1200px) {
