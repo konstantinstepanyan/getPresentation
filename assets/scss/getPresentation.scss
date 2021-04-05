@@ -1,6 +1,14 @@
 .getPresentation {
     color: #777;
 
+
+    &__link {
+        padding-left: 3px;
+        text-decoration: underline;
+        line-height: 6px;
+    }
+
+
     .russian-flag {
         position: absolute;
         max-width: 60px;
